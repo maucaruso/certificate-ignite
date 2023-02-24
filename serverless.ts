@@ -54,6 +54,7 @@ const serverlessConfiguration: AWS = {
       define: { 'require.resolve': undefined },
       platform: 'node',
       concurrency: 10,
+      external: ["chrome-aws-lambda", "puppeteer-core"]
     },
     dynamodb: {
       stages: ["dev", "local"],
